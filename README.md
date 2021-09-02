@@ -1,4 +1,4 @@
-# Sequelize Connection [![Build Status](https://github.com/Links2004/arduinoWebSockets/workflows/CI/badge.svg?branch=master)](https://github.com/nqnghia285/prisma-parse-selected-fields.git)
+# Prisma Parse Selected Fields [![Build Status](https://github.com/Links2004/arduinoWebSockets/workflows/CI/badge.svg?branch=master)](https://github.com/nqnghia285/prisma-parse-selected-fields.git)
 
 Prisma Parse Selected Fields supports parsing selected fields of AST in GraphQL server and Prisma ORM.
 
