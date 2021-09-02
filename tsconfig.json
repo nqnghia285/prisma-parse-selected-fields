@@ -1,0 +1,16 @@
+{
+   "compilerOptions": {
+      "target": "ES6",
+      "lib": ["ES6", "ESNext", "ESNext.AsyncIterable"],
+      "module": "CommonJS",
+      "declaration": true,
+      "strict": true,
+      "outDir": "dist",
+      "moduleResolution": "node",
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true
+   },
+   "exclude": ["node_modules", "dist"]
+}
