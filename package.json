@@ -1,6 +1,6 @@
 {
    "name": "prisma-parse-selected-fields",
-   "version": "1.0.6",
+   "version": "1.0.7",
    "description": "Parse selected fields of AST in GraphQL server and Prisma ORM.",
    "main": "dist/index.js",
    "types": "dist/index.d.ts",
@@ -24,12 +24,9 @@
       "convert selected fields in prisma"
    ],
    "dependencies": {
-      "@types/dotenv": "^8.2.0",
       "@types/graphql": "^14.5.0",
       "@types/graphql-fields": "^1.3.4",
       "@types/node": "^16.7.10",
-      "@types/validator": "^13.6.3",
-      "dotenv": "^10.0.0",
       "graphql": "^15.5.2",
       "graphql-fields": "^2.0.3",
       "typescript": "^4.5.4"
