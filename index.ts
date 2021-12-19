@@ -1,8 +1,5 @@
-import { GraphQLResolveInfo } from 'graphql'
+import { GraphQLResolveInfo as Info } from 'graphql'
 import graphqlFields, { Options } from 'graphql-fields'
-
-export interface GraphQLFieldsOptions extends Options {}
-export interface Info extends GraphQLResolveInfo {}
 
 /**
  * @method convertSelectedFields Convert AST object to select object in Prisma.
@@ -28,10 +25,11 @@ export function convertSelectedFields(selectFields: any): any {
 /**
  * @method parseSelectedFields Convert AST of info object to select object in Prisma.
  * @param info Info
- * @param options GraphQLFieldsOptions | undefined
+ * @param options Options | undefined
  * @returns any
  */
-export function parseSelectedFields(info: Info, options: GraphQLFieldsOptions = { processArguments: false, excludedFields: ['__typename'] }): any {
+export function parseSelectedFields(info: Info, options: Options = { processArguments: false, excludedFields: ['__typename'] }): any {
+   // @ts-ignore
    const selectFields = graphqlFields(info, {}, options)
    return convertSelectedFields(selectFields)
 }

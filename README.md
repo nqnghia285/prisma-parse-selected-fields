@@ -17,10 +17,10 @@ function convertSelectedFields(selectFields: any): any
 /**
  * @method parseSelectedFields Convert AST of info object to select object in Prisma.
  * @param info Info
- * @param options GraphQLFieldsOptions | undefined
+ * @param options Options | undefined
  * @returns any
  */
-function parseSelectedFields(info: Info, options?: GraphQLFieldsOptions): any
+function parseSelectedFields(info: Info, options?: Options): any
 ```
 
 ### Example:
@@ -28,8 +28,8 @@ function parseSelectedFields(info: Info, options?: GraphQLFieldsOptions): any
 ```typescript
 // ES6
 ...
-import { parseSelectedFields, Info } from "prisma-parse-selected-fields";
-import { ConnectionDevelopmentENVType, ConnectionProductionENVType, ConnectionType } from "sequelize-connection/dist/lib/interface"
+import { GraphQLResolveInfo as Info } from 'graphql'
+import { parseSelectedFields } from "prisma-parse-selected-fields";
 
 async function resolver(root: any, args: any, { prisma }: any, info: Info): Promise<prisma.User> {
    const select = parseSelectedFields(info)
