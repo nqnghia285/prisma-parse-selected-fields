@@ -32,7 +32,7 @@ import { parseSelectedFields, Info } from "prisma-parse-selected-fields";
 import { ConnectionDevelopmentENVType, ConnectionProductionENVType, ConnectionType } from "sequelize-connection/dist/lib/interface"
 
 async function resolver(root: any, args: any, { prisma }: any, info: Info): Promise<prisma.User> {
-   const select = parseSelectedFields(info, { processArguments: false, excludedFields: ['__typename'] })
+   const select = parseSelectedFields(info)
 
    return await prisma.user.findMany({
       ....

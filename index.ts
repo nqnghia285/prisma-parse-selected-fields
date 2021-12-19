@@ -31,7 +31,7 @@ export function convertSelectedFields(selectFields: any): any {
  * @param options GraphQLFieldsOptions | undefined
  * @returns any
  */
-export function parseSelectedFields(info: Info, options?: GraphQLFieldsOptions): any {
+export function parseSelectedFields(info: Info, options: GraphQLFieldsOptions = { processArguments: false, excludedFields: ['__typename'] }): any {
    const selectFields = graphqlFields(info, {}, options)
    return convertSelectedFields(selectFields)
 }
