@@ -8,6 +8,8 @@
       "outDir": "dist",
       "moduleResolution": "node",
       "esModuleInterop": true,
+      "sourceMap": true,
+      "declarationMap": true,
       "allowSyntheticDefaultImports": true,
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true
