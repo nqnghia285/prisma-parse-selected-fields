@@ -1,6 +1,6 @@
 {
    "name": "prisma-parse-selected-fields",
-   "version": "1.0.8",
+   "version": "1.0.9",
    "description": "Parse selected fields of AST in GraphQL server and Prisma ORM.",
    "main": "dist/index.js",
    "types": "dist/index.d.ts",
