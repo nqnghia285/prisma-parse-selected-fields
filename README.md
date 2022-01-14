@@ -2,6 +2,22 @@
 
 Prisma Parse Selected Fields supports parsing selected fields of AST in GraphQL server and Prisma ORM.
 
+### Interfaces:
+
+```typescript
+interface ParseFieldsOptions {
+   includeFields: string[]
+   excludeFields: string[]
+}
+```
+
+```typescript
+interface Options {
+   parseFieldsOptions?: ParseFieldsOptions
+   graphQLFieldsOptions?: GraphQLFieldsOptions
+}
+```
+
 ### Functions:
 
 ```typescript
@@ -11,6 +27,16 @@ Prisma Parse Selected Fields supports parsing selected fields of AST in GraphQL 
  * @returns any
  */
 function convertSelectedFields(selectFields: any): any
+```
+
+```typescript
+/**
+ * @method deleteFields Delete specified fields in the object
+ * @param obj any
+ * @param parseFieldsOptions ParseFieldsOptions
+ * @returns any
+ */
+function deleteFields(obj: any, parseFieldsOptions?: ParseFieldsOptions): any
 ```
 
 ```typescript
