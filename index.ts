@@ -1,6 +1,8 @@
 import { GraphQLResolveInfo } from 'graphql'
 import { convertSelectedFields, deleteFields, graphQLParseFields } from './handlers'
 import { Options } from './interface'
+export * from './handlers'
+export * from './interface'
 
 /**
  * @method parseSelectedFields Convert AST of info object to select object in Prisma.
