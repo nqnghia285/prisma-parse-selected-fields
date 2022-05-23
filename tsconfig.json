@@ -4,6 +4,7 @@
       "lib": ["ES6", "ESNext", "ESNext.AsyncIterable"],
       "module": "CommonJS",
       "declaration": true,
+      "allowJs": true,
       "strict": true,
       "outDir": "dist",
       "moduleResolution": "node",
