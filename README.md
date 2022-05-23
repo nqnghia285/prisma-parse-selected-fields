@@ -14,7 +14,7 @@ interface ParseFieldsOptions {
 ```typescript
 interface Options {
    parseFieldsOptions?: ParseFieldsOptions
-   graphQLFieldsOptions?: GraphQLFieldsOptions
+   graphQLParseFieldsOptions?: GraphQLParseFieldsOptions
 }
 ```
 
@@ -42,11 +42,11 @@ function deleteFields(obj: any, parseFieldsOptions?: ParseFieldsOptions): any
 ```typescript
 /**
  * @method parseSelectedFields Convert AST of info object to select object in Prisma.
- * @param info Info
+ * @param info GraphQLResolveInfo
  * @param options Options | undefined
  * @returns any
  */
-function parseSelectedFields(info: Info, options?: Options): any
+function parseSelectedFields(info: GraphQLResolveInfo, options?: Options): any
 ```
 
 ### Example:
