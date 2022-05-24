@@ -7,6 +7,7 @@
       "allowJs": true,
       "strict": true,
       "outDir": "dist",
+      "baseUrl": ".",
       "moduleResolution": "node",
       "esModuleInterop": true,
       "sourceMap": true,
@@ -15,6 +16,6 @@
       "skipLibCheck": true,
       "forceConsistentCasingInFileNames": true
    },
-   "include": ["handlers", "interface", "index.ts"],
+   "include": ["src"],
    "exclude": ["node_modules", "dist"]
 }
