@@ -1,9 +1,8 @@
 {
    "name": "prisma-parse-selected-fields",
-   "version": "1.1.6",
+   "version": "1.1.7",
    "description": "Parse selected fields of AST in GraphQL server and Prisma ORM.",
-   "main": "dist/index.js",
-   "types": "dist/index.d.ts",
+   "main": "src/index.ts",
    "repository": "https://github.com/nqnghia285/prisma-parse-selected-fields.git",
    "author": "nghia <nqnghia285@gmail.com>",
    "license": "MIT",
@@ -18,10 +17,11 @@
    "homepage": "https://github.com/nqnghia285/prisma-parse-selected-fields.git#readme",
    "keywords": [
       "prisma",
+      "graphql",
       "parse ast",
-      "parse info in prisma",
+      "parse selected fields in graphql",
       "prisma selected fields",
-      "convert selected fields in prisma"
+      "convert selected fields for prisma"
    ],
    "dependencies": {
       "@types/graphql": "^14.5.0",
@@ -31,5 +31,15 @@
    },
    "devDependencies": {
       "cross-conf-env": "^1.2.1"
-   }
+   },
+   "files": [
+      "dist/**",
+      "src/**",
+      ".gitignore",
+      ".prettierrc",
+      "README.md",
+      "tsconfig.json",
+      "package.json",
+      "yarn.lock"
+   ]
 }
