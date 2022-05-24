@@ -180,7 +180,7 @@ function flattenAST(ast, info, obj) {
    }, obj)
 }
 
-module.export = function graphQLParseFields(info) {
+export function graphQLParseFields(info) {
    var obj = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {}
    var opts =
       arguments.length > 2 && arguments[2] !== undefined
